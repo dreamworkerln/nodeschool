@@ -1,9 +1,8 @@
-var http = require('http');
-var result = 0;
 //console.log(process.argv);
-for (var i = 2; i < process.argv.length; i++) {
-   result += Number(process.argv[i]);
-}
-
-
-console.log(result);
+var arg1 = process.argv[2];
+var fs = require('fs');
+var buffer = fs.readFileSync(arg1);
+var str = buffer.toString('utf8');
+var splitted = str.split('\n');
+var cnt = splitted.length - 1;
+console.log(splitted);
