@@ -12,3 +12,4 @@ function foo()
 console.log(a); // undefined
 foo();
 console.log(a); // переменная из функции
+// ...
